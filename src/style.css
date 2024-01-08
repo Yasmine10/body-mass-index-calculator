@@ -1,0 +1,103 @@
+/* --- Simple reset --- */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* --- Custom variables --- */
+
+:root {
+  --clr-primary-400: hsl(227, 92%, 58%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-300: hsl(200, 24%, 88%);
+  --clr-neutral-500: hsl(215, 17%, 45%);
+  --clr-neutral-900: hsl(215, 31%, 21%);
+
+  --ff: 'Inter', sans-serif;
+
+  --fw-bold: 600;
+  --fw-regular: 400;
+
+  --fs-heading-xl: 4rem;
+  --fs-heading-l: 3rem;
+  --fs-heading-m: 1.5rem;
+  --fs-heading-s: 1.25rem;
+  --fs-body-m: 1rem;
+  --fs-body-s: 0.875rem;
+}
+
+/* --- General --- */
+
+body {
+  background-color: var(--clr-neutral-100);
+
+  font-family: var(--ff);
+  font-size: var(--fs-body-m);
+  font-weight: var(--fw-regular);
+  line-height: 1.5;
+}
+
+/* --- Utility --- */
+
+.container {
+  --spacing: 1.25rem;
+
+  max-width: 90rem;
+  margin-inline: auto;
+  padding-inline: var(--spacing);
+}
+
+/* --- Typography --- */
+
+.heading {
+  font-weight: var(--fw-bold);
+  line-height: 1.1;
+}
+
+.heading-xl {
+  font-size: var(--fs-heading-xl);
+}
+.heading-l {
+  font-size: var(--fs-heading-l);
+}
+.heading-m {
+  font-size: var(--fs-heading-m);
+}
+.heading-s {
+  font-size: var(--fs-heading-s);
+}
+
+.text-m {
+  font-size: var(--fs-body-m);
+  line-height: 1.5;
+}
+.text-m-bold {
+  font-size: var(--fs-body-m);
+  font-weight: var(--fw-bold);
+  line-height: 1.5;
+}
+.text-s {
+  font-size: var(--fs-body-s);
+  line-height: 1.5;
+}
+
+/* --- Form elements --- */
+
+/* --- Calculator styling --- */
+
+/* --- Page content styling --- */
